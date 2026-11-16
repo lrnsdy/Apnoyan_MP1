@@ -1,0 +1,78 @@
+#main_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+#main_nav .navbar-brand {
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(241, 228, 238);
+}
+
+#main_nav .navbar-toggler {
+    color: rgb(245, 236, 243);
+}
+
+#main_nav .nav-link {
+    color: rgb(250, 245, 249);
+}
+
+body {
+    font-family: 'Montserrat', Verdana;
+    font-weight: bold;
+    padding-top: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.masthead {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -60px;
+    color: rgb(114, 1, 55);
+}
+
+.masthead h1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.text {
+    color: rgb(99, 11, 74);
+    margin: 60px;
+}
+
+.text h1 {
+    font-weight: bolder;
+}
+
+.text h3 {
+    margin-bottom: 40px;
+}
+
+footer .fa-stack-2x {
+    color: rgb(194, 71, 125);
+}
+
+footer .container-fluid {
+    background-color: rgb(99, 11, 74);
+    margin: 0px;
+    padding: 20px;
+}
+
+footer .small {
+    color: white;
+    padding: 10px;
+}
