@@ -4,7 +4,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="styles.css">
-        <script src="index.js"></script>
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">   
 
@@ -51,6 +50,123 @@
             </div>
         </header>
 
+        <button id="cart-icon"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+
+        <div id="cart" class="cart">
+            <button id="close" class="ekis">x</button>
+            <h3 class="lighttext">Your Shopping Cart</h3>
+            <ul id="cart-items"></ul>
+            <p style="color: white">Total: &#8369;<span id="total">0.00</span></p>
+            <button id="buy" class="ekis">Buy</button>
+        </div>
+
+        <div id="grid">
+            <div class="product">
+                <img src="">
+                <h4> Blue Beaded Bracelet </h4>
+                <p> &#8369;150</p>
+                <button class="add" data-id="1" data-name="Blue Beaded Bracelet" data-price="150"> Add to Cart </button>
+                <div class="qty">
+                    <button class="qty-btn" onclick="change_qty(this, -1)">-</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn" onclick="change_qty(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="">
+                <h4> Lapis Lazuli Lanyard <i>(for ID, Glasses)</i> </h4>
+                <p> &#8369;200</p>
+                <button class="add" data-id="2" data-name="Lapis Lazuli Lanyard" data-price="200"> Add to Cart </button>
+                <div class="qty">
+                    <button class="qty-btn" onclick="change_qty(this, -1)">-</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn" onclick="change_qty(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="">
+                <h4> <b>(Limited Edition)</b> Strawberry Matcha Bracelet </h4>
+                <p> &#8369;70</p>
+                <button class="add" data-id="3" data-name="Strawberry Matcha Bracelet" data-price="70"> Add to Cart </button>
+                <div class="qty">
+                    <button class="qty-btn" onclick="change_qty(this, -1)">-</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn" onclick="change_qty(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="">
+                <h4> Sunflower Crochet Wallet </h4>
+                <p> &#8369;120</p>
+                <button class="add" data-id="4" data-name="Sunflower Crochet Wallet" data-price="120"> Add to Cart </button>
+                <div class="qty">
+                    <button class="qty-btn" onclick="change_qty(this, -1)">-</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn" onclick="change_qty(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="">
+                <h4> Beaded Bag Charm </h4>
+                <p> &#8369;70</p>
+                <button class="add" data-id="5" data-name="Beaded Bag Charm" data-price="70"> Add to Cart </button>
+                <div class="qty">
+                    <button class="qty-btn" onclick="change_qty(this, -1)">-</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn" onclick="change_qty(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="">
+                <h4> Sunflower Bucket Hat </h4>
+                <p> &#8369;350 </p>
+                <button class="add" data-id="6" data-name="Sunflower Bucket Hat" data-price="350"> Add to Cart </button>
+                <div class="qty">
+                    <button class="qty-btn" onclick="change_qty(this, -1)">-</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn" onclick="change_qty(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="">
+                <h4> Crochet Ipad Sleeve </h4>
+                <p> &#8369;300</p>
+                <button class="add" data-id="7" data-name="Crochet Ipad Sleeve" data-price="300"> Add to Cart </button>
+                <div class="qty">
+                    <button class="qty-btn" onclick="change_qty(this, -1)">-</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn" onclick="change_qty(this, 1)">+</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="">
+                <h4> Amethyst Ring </h4>
+                <p> &#8369;150</p>
+                <button class="add" data-id="8" data-name="Amethyst Ring" data-price="150"> Add to Cart </button>
+                <div class="qty">
+                    <button class="qty-btn" onclick="change_qty(this, -1)">-</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn" onclick="change_qty(this, 1)">+</button>
+                </div>
+            </div>
+
+            <dialog id="buying">
+                <h3>Thank you for buying!</h3>
+                <p>Please contact us for your payment before we can ship your order.</p>
+                <button id="done" class="ekis">Got it</button>
+            </dialog>
+
+        </div>
+
         <footer class="border-top">
             <div class="container-fluid">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -79,5 +195,6 @@
             </div>
         </footer>
 
+        <script src="index.js"></script>
     </body>
 </html>
