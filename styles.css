@@ -33,7 +33,10 @@ body {
 
 .text {
     color: rgb(54, 34, 6);
-    margin: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .lighttext {
@@ -57,7 +60,7 @@ a {
 
 /* masthead (the picture part with header text) */
 .masthead {
-    min-height: 50vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,14 +79,14 @@ a {
 }   
 
 .masthead h1 {
-    font-size: 70px;
+    font-size: 110px;
     font-weight: bolder;
     display: inline;
 }
 
 .masthead h2 {
     color: rgb(54, 34, 6);
-    font-size: 60px;
+    font-size: 100px;
     font-weight: bolder;
 }
 
@@ -91,8 +94,8 @@ a {
 #bestmain {
     background-color: rgb(208, 154, 186);
     padding: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 40px;
     border-radius: 30px;
 }
@@ -108,8 +111,8 @@ a {
 #beadmain {
     background-color: rgb(125, 177, 53);
     padding: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 40px;
     border-radius: 30px;
 }
@@ -117,10 +120,19 @@ a {
 #crochetmain {
     background-color: rgb(172, 104, 14);
     padding: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 75px;
     border-radius: 30px;
+}
+
+.main-items {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 1000px;
 }
 
 /* contacts */
@@ -152,9 +164,12 @@ a {
 }
 
 .product {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 30px;
+    align-items: center;
 }
 
 .add {
@@ -192,7 +207,7 @@ a {
     transform: translate(-50%, -50%);
     width: 500px;
     height: 500px;
-    padding: 10px;
+    padding: 30px;
     border-radius: 15px;
     border-color:rgb(84, 156, 180);
     z-index: 500;
@@ -241,11 +256,19 @@ a {
     border-radius: 5px;
 }
 
+img {
+    width: 400px;
+    height: 400px;
+}
+
 
 /* reviews/feedback part */
 .review {
     background-color: rgb(251, 251, 251);
-    margin: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     border-color:rgb(54, 34, 6);
     border-radius: 30px;
     padding: 20px;
