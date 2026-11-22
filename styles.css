@@ -58,6 +58,14 @@ a {
     color: inherit;
 }
 
+#imgsrc {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color:rgb(54, 34, 6);
+    margin-right: 10px;
+}
+
 /* masthead (the picture part with header text) */
 .masthead {
     min-height: 70vh;
